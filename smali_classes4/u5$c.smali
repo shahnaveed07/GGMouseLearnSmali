@@ -1,0 +1,92 @@
+.class public Lu5$c;
+.super Ljava/lang/Object;
+.source "r8-map-id-50a1ef0e9d7376f45e630c4d62f1f041932a121cc634a95212ba704afef7215a"
+
+# interfaces
+.implements Lie4;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lu5;->O(Lv68;)Ljava/util/Map;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lie4<",
+        "TE;",
+        "Lzk3<",
+        "TN;>;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic X:Lv68;
+
+
+# direct methods
+.method public constructor <init>(Lv68;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lu5$c;->X:Lv68;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Ljava/lang/Object;)Lzk3;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TE;)",
+            "Lzk3<",
+            "TN;>;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object p0, p0, Lu5$c;->X:Lv68;
+
+    .line 2
+    .line 3
+    invoke-interface {p0, p1}, Lv68;->C(Ljava/lang/Object;)Lzk3;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
+.end method
+
+.method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lu5$c;->a(Ljava/lang/Object;)Lzk3;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zjx.gamebox.plugin.stopwatch.StopWatchSettingView android:id="@id/stop_watch_setting_view_up" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout="@layout/stop_watch_setting_view_up" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.zjx.gamebox.plugin.stopwatch.StopWatchSettingView android:id="@id/stop_watch_setting_view_down" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout="@layout/stop_watch_setting_view_down" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

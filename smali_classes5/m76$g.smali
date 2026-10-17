@@ -1,0 +1,48 @@
+.class public Lm76$g;
+.super Lm76;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lm76;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "g"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lst1;
+
+    .line 2
+    .line 3
+    invoke-static {}, Lcw2;->k()Lwv2;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    invoke-direct {v0, v1}, Lst1;-><init>(Lwv2;)V
+
+    .line 8
+    .line 9
+    .line 10
+    const-string v1, "X25519withSHA512CKDF"
+
+    .line 11
+    .line 12
+    invoke-direct {p0, v1, v0}, Lqf0;-><init>(Ljava/lang/String;Llt2;)V
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method

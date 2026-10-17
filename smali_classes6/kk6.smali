@@ -1,0 +1,120 @@
+.class public Lkk6;
+.super Le98;
+.source "r8-map-id-50a1ef0e9d7376f45e630c4d62f1f041932a121cc634a95212ba704afef7215a"
+
+
+# instance fields
+.field public f:Ljava/lang/String;
+
+.field public g:Ljava/lang/String;
+
+.field public h:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Le98;-><init>()V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Le98;-><init>()V
+
+    .line 3
+    iput-object p1, p0, Lkk6;->f:Ljava/lang/String;
+
+    .line 4
+    iput-object p2, p0, Lkk6;->g:Ljava/lang/String;
+
+    .line 5
+    iput-object p3, p0, Lkk6;->h:Ljava/lang/String;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public c(Lu2d;)V
+    .locals 0
+
+    .line 1
+    invoke-interface {p1, p0}, Lu2d;->visit(Lkk6;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public p()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lkk6;->g:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public q()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lkk6;->f:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public r()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lkk6;->h:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public s(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lkk6;->g:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public t(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lkk6;->f:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public u(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lkk6;->h:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method

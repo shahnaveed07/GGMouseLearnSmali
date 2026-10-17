@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/cellContainer" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_weight="0.0">
+                <ImageView android:id="@id/imageView" android:layout_width="30.0dip" android:layout_height="30.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <Space android:layout_width="8.0dip" android:layout_height="wrap_content" android:layout_weight="0.0" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="15.0sp" android:textStyle="normal" android:textColor="@color/black" android:ellipsize="middle" android:gravity="center_vertical" android:id="@id/headerTextView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="7.0dip" android:text="TextView" android:lines="1" />
+                <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="10.0sp" android:id="@id/versionTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" />
+                    <Space android:visibility="gone" android:layout_width="10.0dip" android:layout_height="wrap_content" />
+                    <TextView android:textSize="10.0sp" android:id="@id/bundleIdTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <Space android:layout_width="5.0dip" android:layout_height="wrap_content" android:layout_weight="0.0" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.0">
+            <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.AppCompatButton android:textSize="@dimen/font_size_text_phone" android:textColor="@color/white" android:id="@id/removeButton" android:background="@drawable/rounded_button_background_15dp" android:layout_width="wrap_content" android:layout_height="30.0dip" android:minWidth="0.0dip" android:text="@string/start_game_table_row_remove" android:includeFontPadding="true" android:drawablePadding="0.0dip" android:layout_weight="0.0" android:insetTop="0.0dip" android:insetBottom="0.0dip" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" android:backgroundTint="@color/system_red" />
+                <Space android:layout_width="5.0dip" android:layout_height="wrap_content" android:layout_weight="0.0" />
+                <androidx.appcompat.widget.AppCompatButton android:textSize="@dimen/font_size_text_phone" android:textColor="@color/white" android:id="@id/startGameButton" android:background="@drawable/default_rounded_button_background" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="80.0dip" android:layout_height="30.0dip" android:text="@string/start_game_table_row_start_game" android:layout_weight="0.0" android:insetTop="0.0dip" android:insetBottom="0.0dip" android:backgroundTint="@color/jy_blue_1" />
+                <Space android:layout_width="5.0dip" android:layout_height="0.0dip" android:layout_weight="0.0" />
+            </LinearLayout>
+            <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

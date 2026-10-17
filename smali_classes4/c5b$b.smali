@@ -1,0 +1,828 @@
+.class public Lc5b$b;
+.super Ljava/util/AbstractList;
+.source "r8-map-id-50a1ef0e9d7376f45e630c4d62f1f041932a121cc634a95212ba704afef7215a"
+
+# interfaces
+.implements Ljava/util/RandomAccess;
+.implements Ljava/io/Serializable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lc5b;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "b"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/util/AbstractList<",
+        "Ljava/lang/Short;",
+        ">;",
+        "Ljava/util/RandomAccess;",
+        "Ljava/io/Serializable;"
+    }
+.end annotation
+
+.annotation build Lst4;
+.end annotation
+
+
+# static fields
+.field public static final V1:J
+
+
+# instance fields
+.field public final X:[S
+
+.field public final Y:I
+
+.field public final Z:I
+
+
+# direct methods
+.method public constructor <init>([S)V
+    .locals 2
+
+    const/4 v0, 0x0
+
+    .line 1
+    array-length v1, p1
+
+    invoke-direct {p0, p1, v0, v1}, Lc5b$b;-><init>([SII)V
+
+    return-void
+.end method
+
+.method public constructor <init>([SII)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
+
+    .line 3
+    iput-object p1, p0, Lc5b$b;->X:[S
+
+    .line 4
+    iput p2, p0, Lc5b$b;->Y:I
+
+    .line 5
+    iput p3, p0, Lc5b$b;->Z:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public contains(Ljava/lang/Object;)Z
+    .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Log1;
+        .end annotation
+    .end param
+
+    .line 1
+    instance-of v0, p1, Ljava/lang/Short;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Lc5b$b;->X:[S
+
+    .line 6
+    .line 7
+    check-cast p1, Ljava/lang/Short;
+
+    .line 8
+    .line 9
+    invoke-virtual {p1}, Ljava/lang/Short;->shortValue()S
+
+    .line 10
+    .line 11
+    .line 12
+    move-result p1
+
+    .line 13
+    iget v1, p0, Lc5b$b;->Y:I
+
+    .line 14
+    .line 15
+    iget p0, p0, Lc5b$b;->Z:I
+
+    .line 16
+    .line 17
+    invoke-static {v0, p1, v1, p0}, Lc5b;->n([SSII)I
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p0
+
+    .line 21
+    const/4 p1, -0x1
+
+    .line 22
+    if-eq p0, p1, :cond_0
+
+    .line 23
+    .line 24
+    const/4 p0, 0x1
+
+    .line 25
+    return p0
+
+    .line 26
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 27
+    return p0
+.end method
+
+.method public d(I)Ljava/lang/Short;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lc5b$b;->size()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    invoke-static {p1, v0}, Lb59;->C(II)I
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v0, p0, Lc5b$b;->X:[S
+
+    .line 9
+    .line 10
+    iget p0, p0, Lc5b$b;->Y:I
+
+    .line 11
+    .line 12
+    add-int/2addr p0, p1
+
+    .line 13
+    aget-short p0, v0, p0
+
+    .line 14
+    .line 15
+    invoke-static {p0}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p0
+
+    .line 19
+    return-object p0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 6
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Log1;
+        .end annotation
+    .end param
+
+    .line 1
+    if-ne p1, p0, :cond_0
+
+    .line 2
+    .line 3
+    goto :goto_2
+
+    .line 4
+    :cond_0
+    instance-of v0, p1, Lc5b$b;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_4
+
+    .line 7
+    .line 8
+    check-cast p1, Lc5b$b;
+
+    .line 9
+    .line 10
+    invoke-virtual {p0}, Lc5b$b;->size()I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v0
+
+    .line 14
+    invoke-virtual {p1}, Lc5b$b;->size()I
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v1
+
+    .line 18
+    const/4 v2, 0x0
+
+    .line 19
+    if-eq v1, v0, :cond_1
+
+    .line 20
+    .line 21
+    goto :goto_1
+
+    .line 22
+    :cond_1
+    move v1, v2
+
+    .line 23
+    :goto_0
+    if-ge v1, v0, :cond_3
+
+    .line 24
+    .line 25
+    iget-object v3, p0, Lc5b$b;->X:[S
+
+    .line 26
+    .line 27
+    iget v4, p0, Lc5b$b;->Y:I
+
+    .line 28
+    .line 29
+    add-int/2addr v4, v1
+
+    .line 30
+    aget-short v3, v3, v4
+
+    .line 31
+    .line 32
+    iget-object v4, p1, Lc5b$b;->X:[S
+
+    .line 33
+    .line 34
+    iget v5, p1, Lc5b$b;->Y:I
+
+    .line 35
+    .line 36
+    add-int/2addr v5, v1
+
+    .line 37
+    aget-short v4, v4, v5
+
+    .line 38
+    .line 39
+    if-eq v3, v4, :cond_2
+
+    .line 40
+    .line 41
+    :goto_1
+    return v2
+
+    .line 42
+    :cond_2
+    add-int/lit8 v1, v1, 0x1
+
+    .line 43
+    .line 44
+    goto :goto_0
+
+    .line 45
+    :cond_3
+    :goto_2
+    const/4 p0, 0x1
+
+    .line 46
+    return p0
+
+    .line 47
+    :cond_4
+    invoke-super {p0, p1}, Ljava/util/AbstractList;->equals(Ljava/lang/Object;)Z
+
+    .line 48
+    .line 49
+    .line 50
+    move-result p0
+
+    .line 51
+    return p0
+.end method
+
+.method public g(ILjava/lang/Short;)Ljava/lang/Short;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lc5b$b;->size()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    invoke-static {p1, v0}, Lb59;->C(II)I
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v0, p0, Lc5b$b;->X:[S
+
+    .line 9
+    .line 10
+    iget p0, p0, Lc5b$b;->Y:I
+
+    .line 11
+    .line 12
+    add-int/2addr p0, p1
+
+    .line 13
+    aget-short p1, v0, p0
+
+    .line 14
+    .line 15
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {p2}, Ljava/lang/Short;->shortValue()S
+
+    .line 19
+    .line 20
+    .line 21
+    move-result p2
+
+    .line 22
+    aput-short p2, v0, p0
+
+    .line 23
+    .line 24
+    invoke-static {p1}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p0
+
+    .line 28
+    return-object p0
+.end method
+
+.method public bridge synthetic get(I)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lc5b$b;->d(I)Ljava/lang/Short;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public hashCode()I
+    .locals 3
+
+    .line 1
+    iget v0, p0, Lc5b$b;->Y:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    :goto_0
+    iget v2, p0, Lc5b$b;->Z:I
+
+    .line 5
+    .line 6
+    if-ge v0, v2, :cond_0
+
+    .line 7
+    .line 8
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 9
+    .line 10
+    iget-object v2, p0, Lc5b$b;->X:[S
+
+    .line 11
+    .line 12
+    aget-short v2, v2, v0
+
+    .line 13
+    .line 14
+    add-int/2addr v1, v2
+
+    .line 15
+    add-int/lit8 v0, v0, 0x1
+
+    .line 16
+    .line 17
+    goto :goto_0
+
+    .line 18
+    :cond_0
+    return v1
+.end method
+
+.method public indexOf(Ljava/lang/Object;)I
+    .locals 3
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Log1;
+        .end annotation
+    .end param
+
+    .line 1
+    instance-of v0, p1, Ljava/lang/Short;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Lc5b$b;->X:[S
+
+    .line 6
+    .line 7
+    check-cast p1, Ljava/lang/Short;
+
+    .line 8
+    .line 9
+    invoke-virtual {p1}, Ljava/lang/Short;->shortValue()S
+
+    .line 10
+    .line 11
+    .line 12
+    move-result p1
+
+    .line 13
+    iget v1, p0, Lc5b$b;->Y:I
+
+    .line 14
+    .line 15
+    iget v2, p0, Lc5b$b;->Z:I
+
+    .line 16
+    .line 17
+    invoke-static {v0, p1, v1, v2}, Lc5b;->n([SSII)I
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p1
+
+    .line 21
+    if-ltz p1, :cond_0
+
+    .line 22
+    .line 23
+    iget p0, p0, Lc5b$b;->Y:I
+
+    .line 24
+    .line 25
+    sub-int/2addr p1, p0
+
+    .line 26
+    return p1
+
+    .line 27
+    :cond_0
+    const/4 p0, -0x1
+
+    .line 28
+    return p0
+.end method
+
+.method public isEmpty()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public j()[S
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lc5b$b;->X:[S
+
+    .line 2
+    .line 3
+    iget v1, p0, Lc5b$b;->Y:I
+
+    .line 4
+    .line 5
+    iget p0, p0, Lc5b$b;->Z:I
+
+    .line 6
+    .line 7
+    invoke-static {v0, v1, p0}, Ljava/util/Arrays;->copyOfRange([SII)[S
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p0
+
+    .line 11
+    return-object p0
+.end method
+
+.method public lastIndexOf(Ljava/lang/Object;)I
+    .locals 3
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Log1;
+        .end annotation
+    .end param
+
+    .line 1
+    instance-of v0, p1, Ljava/lang/Short;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Lc5b$b;->X:[S
+
+    .line 6
+    .line 7
+    check-cast p1, Ljava/lang/Short;
+
+    .line 8
+    .line 9
+    invoke-virtual {p1}, Ljava/lang/Short;->shortValue()S
+
+    .line 10
+    .line 11
+    .line 12
+    move-result p1
+
+    .line 13
+    iget v1, p0, Lc5b$b;->Y:I
+
+    .line 14
+    .line 15
+    iget v2, p0, Lc5b$b;->Z:I
+
+    .line 16
+    .line 17
+    invoke-static {v0, p1, v1, v2}, Lc5b;->r([SSII)I
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p1
+
+    .line 21
+    if-ltz p1, :cond_0
+
+    .line 22
+    .line 23
+    iget p0, p0, Lc5b$b;->Y:I
+
+    .line 24
+    .line 25
+    sub-int/2addr p1, p0
+
+    .line 26
+    return p1
+
+    .line 27
+    :cond_0
+    const/4 p0, -0x1
+
+    .line 28
+    return p0
+.end method
+
+.method public bridge synthetic set(ILjava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p2, Ljava/lang/Short;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1, p2}, Lc5b$b;->g(ILjava/lang/Short;)Ljava/lang/Short;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
+.end method
+
+.method public size()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lc5b$b;->Z:I
+
+    .line 2
+    .line 3
+    iget p0, p0, Lc5b$b;->Y:I
+
+    .line 4
+    .line 5
+    sub-int/2addr v0, p0
+
+    .line 6
+    return v0
+.end method
+
+.method public subList(II)Ljava/util/List;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(II)",
+            "Ljava/util/List<",
+            "Ljava/lang/Short;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lc5b$b;->size()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    invoke-static {p1, p2, v0}, Lb59;->f0(III)V
+
+    .line 6
+    .line 7
+    .line 8
+    if-ne p1, p2, :cond_0
+
+    .line 9
+    .line 10
+    sget-object p0, Ljava/util/Collections;->EMPTY_LIST:Ljava/util/List;
+
+    .line 11
+    .line 12
+    return-object p0
+
+    .line 13
+    :cond_0
+    new-instance v0, Lc5b$b;
+
+    .line 14
+    .line 15
+    iget-object v1, p0, Lc5b$b;->X:[S
+
+    .line 16
+    .line 17
+    iget p0, p0, Lc5b$b;->Y:I
+
+    .line 18
+    .line 19
+    add-int/2addr p1, p0
+
+    .line 20
+    add-int/2addr p0, p2
+
+    .line 21
+    invoke-direct {v0, v1, p1, p0}, Lc5b$b;-><init>([SII)V
+
+    .line 22
+    .line 23
+    .line 24
+    return-object v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lc5b$b;->size()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v1
+
+    .line 7
+    mul-int/lit8 v1, v1, 0x6
+
+    .line 8
+    .line 9
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    .line 10
+    .line 11
+    .line 12
+    const/16 v1, 0x5b
+
+    .line 13
+    .line 14
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 15
+    .line 16
+    .line 17
+    iget-object v1, p0, Lc5b$b;->X:[S
+
+    .line 18
+    .line 19
+    iget v2, p0, Lc5b$b;->Y:I
+
+    .line 20
+    .line 21
+    aget-short v1, v1, v2
+
+    .line 22
+    .line 23
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 24
+    .line 25
+    .line 26
+    iget v1, p0, Lc5b$b;->Y:I
+
+    .line 27
+    .line 28
+    :goto_0
+    add-int/lit8 v1, v1, 0x1
+
+    .line 29
+    .line 30
+    iget v2, p0, Lc5b$b;->Z:I
+
+    .line 31
+    .line 32
+    if-ge v1, v2, :cond_0
+
+    .line 33
+    .line 34
+    const-string v2, ", "
+
+    .line 35
+    .line 36
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 37
+    .line 38
+    .line 39
+    iget-object v2, p0, Lc5b$b;->X:[S
+
+    .line 40
+    .line 41
+    aget-short v2, v2, v1
+
+    .line 42
+    .line 43
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 44
+    .line 45
+    .line 46
+    goto :goto_0
+
+    .line 47
+    :cond_0
+    const/16 p0, 0x5d
+
+    .line 48
+    .line 49
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 50
+    .line 51
+    .line 52
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object p0
+
+    .line 56
+    return-object p0
+.end method

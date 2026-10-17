@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/component_settings_view_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/textView10" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/long_press_group_component_settings_view_list_component_title_trigger_component" />
+    <TextView android:textColor="@color/white" android:id="@id/numberTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+    <Space android:layout_width="10.0dip" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/font_size_text_phone" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/textView38" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/long_press_group_component_settings_view_list_component_title_delay_time" />
+    <Space android:layout_width="5.0dip" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/font_size_text_phone" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/delayTimeSecondsTextView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="0.1" />
+    <Space android:layout_width="30.0dip" android:layout_height="wrap_content" />
+    <com.zjx.gamebox.ui.uicomponent.FilledSliderWithButtons android:id="@id/valueSliderView" android:layout_width="200.0dip" android:layout_height="fill_parent" app:sliderMax="2000" app:sliderMin="0" />
+    <Space android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

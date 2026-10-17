@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zjx.gamebox.plugin.macro.recorder.MacroRecorderSaveMacroPanel android:background="@color/white" android:layout_width="wrap_content" android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <EditText android:id="@id/editText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Name" android:ems="10" android:inputType="text" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:id="@id/cancelButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/macro_plugin_recording_control_panel_text_cancel" android:layout_weight="1.0" />
+            <Button android:id="@id/saveButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/macro_plugin_recording_save_panel_button_save" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</com.zjx.gamebox.plugin.macro.recorder.MacroRecorderSaveMacroPanel>

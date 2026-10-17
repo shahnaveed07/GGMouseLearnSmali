@@ -1,0 +1,34 @@
+.class public interface abstract annotation Lmz5;
+.super Ljava/lang/Object;
+.source "r8-map-id-50a1ef0e9d7376f45e630c4d62f1f041932a121cc634a95212ba704afef7215a"
+
+# interfaces
+.implements Ljava/lang/annotation/Annotation;
+
+
+# annotations
+.annotation build Leab;
+    version = "1.2"
+.end annotation
+
+.annotation runtime Lgt2;
+    level = .enum Ljt2;->Z:Ljt2;
+    message = "Switch to new -jvm-default modes: `enable` or `no-compatibility`"
+.end annotation
+
+.annotation runtime Li0c;
+    allowedTargets = {
+        .enum Lov;->K6:Lov;,
+        .enum Lov;->V1:Lov;
+    }
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Retention;
+    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Target;
+    value = {
+        .enum Ljava/lang/annotation/ElementType;->METHOD:Ljava/lang/annotation/ElementType;
+    }
+.end annotation

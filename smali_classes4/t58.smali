@@ -1,0 +1,46 @@
+.class public final synthetic Lt58;
+.super Ljava/lang/Object;
+.source "r8-map-id-50a1ef0e9d7376f45e630c4d62f1f041932a121cc634a95212ba704afef7215a"
+
+# interfaces
+.implements Li81$a;
+
+
+# instance fields
+.field public final synthetic a:Lv58;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lv58;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lt58;->a:Lv58;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroid/graphics/Canvas;)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lt58;->a:Lv58;
+
+    .line 2
+    .line 3
+    invoke-static {p0, p1}, Lv58;->i(Lv58;Landroid/graphics/Canvas;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

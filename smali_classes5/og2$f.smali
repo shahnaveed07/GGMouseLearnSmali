@@ -1,0 +1,58 @@
+.class public Log2$f;
+.super Lvg0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Log2;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "f"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 4
+
+    .line 1
+    new-instance v0, Li01;
+
+    .line 2
+    .line 3
+    new-instance v1, Lpg2;
+
+    .line 4
+    .line 5
+    invoke-direct {v1}, Lpg2;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    new-instance v2, Ln85;
+
+    .line 9
+    .line 10
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    .line 11
+    .line 12
+    .line 13
+    const/16 v3, 0x40
+
+    .line 14
+    .line 15
+    invoke-direct {v0, v1, v3, v2}, Li01;-><init>(Las0;ILcs0;)V
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-direct {p0, v0}, Lvg0;-><init>(Ltv6;)V
+
+    .line 19
+    .line 20
+    .line 21
+    return-void
+.end method

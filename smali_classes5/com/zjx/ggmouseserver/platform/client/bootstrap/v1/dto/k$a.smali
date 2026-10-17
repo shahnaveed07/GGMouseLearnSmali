@@ -1,0 +1,451 @@
+.class public final Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a;
+.super Ljava/lang/Object;
+.source "r8-map-id-50a1ef0e9d7376f45e630c4d62f1f041932a121cc634a95212ba704afef7215a"
+
+
+# annotations
+.annotation build Lcom/google/protobuf/kotlin/ProtoDslMarker;
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static final b:Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a$a;
+    .annotation build Lsa8;
+    .end annotation
+.end field
+
+
+# instance fields
+.field public final a:Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+    .annotation build Lsa8;
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a$a;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a;->b:Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a$a;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    iput-object p1, p0, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a;->a:Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;Lqp2;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a;-><init>(Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic a()Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo;
+    .locals 1
+    .annotation build Lfj9;
+    .end annotation
+
+    .line 1
+    iget-object p0, p0, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a;->a:Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->build()Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    const-string v0, "build(...)"
+
+    .line 8
+    .line 9
+    invoke-static {p0, v0}, Lpm5;->o(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 10
+    .line 11
+    .line 12
+    check-cast p0, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo;
+
+    .line 13
+    .line 14
+    return-object p0
+.end method
+
+.method public final b()V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a;->a:Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;->clearFileUrl()Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final c()V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a;->a:Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;->clearForceUpdate()Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final d()V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a;->a:Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;->clearHasUpdate()Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final e()V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a;->a:Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;->clearNewVersionCode()Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final f()V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a;->a:Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;->clearUpdateContent()Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final g()Ljava/lang/String;
+    .locals 1
+    .annotation build Lsa8;
+    .end annotation
+
+    .annotation build Luz5;
+        name = "getFileUrl"
+    .end annotation
+
+    .line 1
+    iget-object p0, p0, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a;->a:Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;->getFileUrl()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    const-string v0, "getFileUrl(...)"
+
+    .line 8
+    .line 9
+    invoke-static {p0, v0}, Lpm5;->o(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-object p0
+.end method
+
+.method public final h()Z
+    .locals 0
+    .annotation build Luz5;
+        name = "getForceUpdate"
+    .end annotation
+
+    .line 1
+    iget-object p0, p0, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a;->a:Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;->getForceUpdate()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final i()Z
+    .locals 0
+    .annotation build Luz5;
+        name = "getHasUpdate"
+    .end annotation
+
+    .line 1
+    iget-object p0, p0, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a;->a:Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;->getHasUpdate()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final j()I
+    .locals 0
+    .annotation build Luz5;
+        name = "getNewVersionCode"
+    .end annotation
+
+    .line 1
+    iget-object p0, p0, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a;->a:Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;->getNewVersionCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final k()Ljava/lang/String;
+    .locals 1
+    .annotation build Lsa8;
+    .end annotation
+
+    .annotation build Luz5;
+        name = "getUpdateContent"
+    .end annotation
+
+    .line 1
+    iget-object p0, p0, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a;->a:Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;->getUpdateContent()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    const-string v0, "getUpdateContent(...)"
+
+    .line 8
+    .line 9
+    invoke-static {p0, v0}, Lpm5;->o(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-object p0
+.end method
+
+.method public final l(Ljava/lang/String;)V
+    .locals 1
+    .param p1    # Ljava/lang/String;
+        .annotation build Lsa8;
+        .end annotation
+    .end param
+    .annotation build Luz5;
+        name = "setFileUrl"
+    .end annotation
+
+    .line 1
+    const-string v0, "value"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lpm5;->p(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object p0, p0, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a;->a:Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 7
+    .line 8
+    invoke-virtual {p0, p1}, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;->setFileUrl(Ljava/lang/String;)Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public final m(Z)V
+    .locals 0
+    .annotation build Luz5;
+        name = "setForceUpdate"
+    .end annotation
+
+    .line 1
+    iget-object p0, p0, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a;->a:Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;->setForceUpdate(Z)Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final n(Z)V
+    .locals 0
+    .annotation build Luz5;
+        name = "setHasUpdate"
+    .end annotation
+
+    .line 1
+    iget-object p0, p0, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a;->a:Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;->setHasUpdate(Z)Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final o(I)V
+    .locals 0
+    .annotation build Luz5;
+        name = "setNewVersionCode"
+    .end annotation
+
+    .line 1
+    iget-object p0, p0, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a;->a:Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;->setNewVersionCode(I)Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final p(Ljava/lang/String;)V
+    .locals 1
+    .param p1    # Ljava/lang/String;
+        .annotation build Lsa8;
+        .end annotation
+    .end param
+    .annotation build Luz5;
+        name = "setUpdateContent"
+    .end annotation
+
+    .line 1
+    const-string v0, "value"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lpm5;->p(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object p0, p0, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/k$a;->a:Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 7
+    .line 8
+    invoke-virtual {p0, p1}, Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;->setUpdateContent(Ljava/lang/String;)Lcom/zjx/ggmouseserver/platform/client/bootstrap/v1/dto/ClientBootstrapUpdateInfo$Builder;
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method

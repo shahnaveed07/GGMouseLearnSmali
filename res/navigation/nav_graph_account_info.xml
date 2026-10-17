@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation app:startDestination="@id/account_info"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.zjx.gamebox.ui.account.accountinfo.AccountInfoFragment" android:id="@id/account_info" />
+    <fragment android:name="com.zjx.gamebox.ui.account.accountinfo.ChangeEmailFragment" android:id="@id/change_email" />
+</navigation>

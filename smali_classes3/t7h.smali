@@ -1,0 +1,102 @@
+.class public final Lt7h;
+.super Ljava/lang/Object;
+.source "r8-map-id-50a1ef0e9d7376f45e630c4d62f1f041932a121cc634a95212ba704afef7215a"
+
+# interfaces
+.implements Lrfm;
+
+
+# instance fields
+.field public final a:Lr7h;
+
+
+# direct methods
+.method public constructor <init>(Lr7h;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lt7h;->a:Lr7h;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public static c(Lr7h;)Lt7h;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lt7h;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, Lt7h;-><init>(Lr7h;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method
+
+.method public static d(Lr7h;)Landroid/view/View;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lr7h;->b:Landroid/view/View;
+
+    .line 2
+    .line 3
+    invoke-static {p0}, Ldgm;->b(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lt7h;->a:Lr7h;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Lr7h;->b:Landroid/view/View;
+
+    .line 4
+    .line 5
+    invoke-static {p0}, Ldgm;->b(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    return-object p0
+.end method
+
+.method public final b()Landroid/view/View;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lt7h;->a:Lr7h;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Lr7h;->b:Landroid/view/View;
+
+    .line 4
+    .line 5
+    invoke-static {p0}, Ldgm;->b(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    return-object p0
+.end method

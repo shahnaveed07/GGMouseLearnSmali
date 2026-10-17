@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation app:startDestination="@id/login_with_email"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.zjx.gamebox.login.LoginWithEmailFragment" android:id="@id/login_with_email" />
+    <fragment android:name="com.zjx.gamebox.login.SignUpFragment" android:id="@id/login_sign_up" />
+    <fragment android:name="com.zjx.gamebox.login.ResetPasswordFragment" android:id="@id/login_reset_password" />
+</navigation>

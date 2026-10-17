@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="@dimen/premium_item_width" android:layout_height="@dimen/premium_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/item_root" android:background="@drawable/purchase_premium_item_bg" android:layout_width="133.0dip" android:layout_height="@dimen/premium_item_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginTop="5.0dip" android:paddingStart="6.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@id/points_image" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/ic_point" />
+            <TextView android:textSize="9.0dip" android:textColor="#ffe0a000" android:layout_gravity="center_vertical" android:id="@id/points_text" android:layout_width="27.0dip" android:layout_height="wrap_content" android:text="+0" />
+            <ImageView android:id="@id/experiencesImage" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/ic_account_experience" />
+            <TextView android:textSize="9.0dip" android:textColor="#ff16c5ef" android:id="@id/experiences_text" android:layout_width="32.0dip" android:layout_height="wrap_content" android:text="+0" />
+        </LinearLayout>
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="Annual Premium" android:paddingHorizontal="4.0dip" app:layout_constraintBottom_toTopOf="@id/price" />
+        <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/price" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginBottom="10.0dip" android:text="$0" app:layout_constraintBottom_toTopOf="@id/selectButton" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+        <TextView android:textSize="20.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/selectButton" android:background="@drawable/select_button_bg" android:layout_width="108.0dip" android:layout_height="32.0dip" android:layout_marginBottom="17.0dip" android:text="@string/purchase" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

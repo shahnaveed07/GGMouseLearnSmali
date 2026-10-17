@@ -1,0 +1,33 @@
+.class public interface abstract Lcom/android/volley/Cache;
+.super Ljava/lang/Object;
+.source "r8-map-id-50a1ef0e9d7376f45e630c4d62f1f041932a121cc634a95212ba704afef7215a"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/android/volley/Cache$Entry;
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract clear()V
+.end method
+
+.method public abstract get(Ljava/lang/String;)Lcom/android/volley/Cache$Entry;
+    .annotation build Lhc8;
+    .end annotation
+.end method
+
+.method public abstract initialize()V
+.end method
+
+.method public abstract invalidate(Ljava/lang/String;Z)V
+.end method
+
+.method public abstract put(Ljava/lang/String;Lcom/android/volley/Cache$Entry;)V
+.end method
+
+.method public abstract remove(Ljava/lang/String;)V
+.end method

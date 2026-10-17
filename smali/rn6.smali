@@ -1,0 +1,20 @@
+.class public final synthetic Lrn6;
+.super Ljava/lang/Object;
+.source "r8-map-id-50a1ef0e9d7376f45e630c4d62f1f041932a121cc634a95212ba704afef7215a"
+
+
+# direct methods
+.method public static bridge synthetic a(Ljava/util/Locale;Ljava/util/Locale;)Z
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Landroid/os/LocaleList;->matchesLanguageAndScript(Ljava/util/Locale;Ljava/util/Locale;)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method

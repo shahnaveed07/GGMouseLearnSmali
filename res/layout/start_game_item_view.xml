@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/item_root" android:layout_width="150.0dip" android:layout_height="202.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/app_icon" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_margin="25.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.zjx.gamebox.ui.uicomponent.MarqueeTextView android:textSize="18.0dip" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center" android:id="@id/app_name" android:layout_width="128.0dip" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:maxLines="1" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

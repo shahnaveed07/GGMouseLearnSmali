@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/common_item_bg_color" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="-12.0dip" app:layout_constraintBottom_toBottomOf="@id/helpIcon" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/white" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/manage_adb_activity_step2_sub" android:maxLines="2" android:layout_marginStart="@dimen/activation_padding" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/helpIcon" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_marginTop="6.0dip" android:contentDescription="@string/help" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

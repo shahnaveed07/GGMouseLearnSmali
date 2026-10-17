@@ -1,0 +1,80 @@
+.class public final Lp8h;
+.super Ljava/lang/Object;
+.source "r8-map-id-50a1ef0e9d7376f45e630c4d62f1f041932a121cc634a95212ba704afef7215a"
+
+# interfaces
+.implements Lrfm;
+
+
+# instance fields
+.field public final a:Lr7h;
+
+
+# direct methods
+.method public constructor <init>(Lr7h;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lp8h;->a:Lr7h;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public static c(Lr7h;)Lp8h;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lp8h;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, Lp8h;-><init>(Lr7h;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/lang/Object;
+    .locals 0
+    .annotation build Lhc8;
+    .end annotation
+
+    .line 1
+    iget-object p0, p0, Lp8h;->a:Lr7h;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Lr7h;->d:Lktg;
+
+    .line 4
+    .line 5
+    return-object p0
+.end method
+
+.method public final b()Lktg;
+    .locals 0
+    .annotation build Lhc8;
+    .end annotation
+
+    .line 1
+    iget-object p0, p0, Lp8h;->a:Lr7h;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Lr7h;->d:Lktg;
+
+    .line 4
+    .line 5
+    return-object p0
+.end method

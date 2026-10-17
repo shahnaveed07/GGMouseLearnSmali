@@ -1,0 +1,49 @@
+.class public Ljm6$g;
+.super Ljm6$c;
+.source "r8-map-id-50a1ef0e9d7376f45e630c4d62f1f041932a121cc634a95212ba704afef7215a"
+
+# interfaces
+.implements Ljava/util/RandomAccess;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ljm6;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "g"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<E:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljm6$c<",
+        "TE;>;",
+        "Ljava/util/RandomAccess;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Ljava/util/List;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "TE;>;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0, p1}, Ljm6$c;-><init>(Ljava/util/List;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method

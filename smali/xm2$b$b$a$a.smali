@@ -1,0 +1,136 @@
+.class public final Lxm2$b$b$a$a;
+.super Ljz1;
+.source "r8-map-id-50a1ef0e9d7376f45e630c4d62f1f041932a121cc634a95212ba704afef7215a"
+
+
+# annotations
+.annotation runtime Lco2;
+    c = "androidx.datastore.core.DataStoreImpl$InitDataStore$doRun$initData$1$api$1"
+    f = "DataStoreImpl.kt"
+    i = {
+        0x0,
+        0x0,
+        0x1,
+        0x2,
+        0x2
+    }
+    l = {
+        0x236,
+        0x1d3,
+        0x1d5
+    }
+    m = "updateData"
+    n = {
+        "transform",
+        "$this$withLock_u24default$iv",
+        "$this$withLock_u24default$iv",
+        "$this$withLock_u24default$iv",
+        "newData"
+    }
+    s = {
+        "L$0",
+        "L$1",
+        "L$0",
+        "L$0",
+        "L$2"
+    }
+    v = 0x1
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lxm2$b$b$a;->a(Lfe4;Lfz1;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# instance fields
+.field public G6:Ljava/lang/Object;
+
+.field public H6:Ljava/lang/Object;
+
+.field public I6:Ljava/lang/Object;
+
+.field public J6:Ljava/lang/Object;
+
+.field public synthetic K6:Ljava/lang/Object;
+
+.field public final synthetic L6:Lxm2$b$b$a;
+
+.field public M6:I
+
+.field public V1:Ljava/lang/Object;
+
+
+# direct methods
+.method public constructor <init>(Lxm2$b$b$a;Lfz1;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lxm2$b$b$a;",
+            "Lfz1<",
+            "-",
+            "Lxm2$b$b$a$a;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lxm2$b$b$a$a;->L6:Lxm2$b$b$a;
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p2}, Ljz1;-><init>(Lfz1;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final q0(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iput-object p1, p0, Lxm2$b$b$a$a;->K6:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    iget p1, p0, Lxm2$b$b$a$a;->M6:I
+
+    .line 4
+    .line 5
+    const/high16 v0, -0x80000000
+
+    .line 6
+    .line 7
+    or-int/2addr p1, v0
+
+    .line 8
+    iput p1, p0, Lxm2$b$b$a$a;->M6:I
+
+    .line 9
+    .line 10
+    iget-object p1, p0, Lxm2$b$b$a$a;->L6:Lxm2$b$b$a;
+
+    .line 11
+    .line 12
+    const/4 v0, 0x0
+
+    .line 13
+    invoke-virtual {p1, v0, p0}, Lxm2$b$b$a;->a(Lfe4;Lfz1;)Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    return-object p0
+.end method

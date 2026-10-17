@@ -1,0 +1,115 @@
+.class public final Ld60;
+.super Ljava/lang/Object;
+.source "r8-map-id-50a1ef0e9d7376f45e630c4d62f1f041932a121cc634a95212ba704afef7215a"
+
+
+# instance fields
+.field public final a:Ljava/util/concurrent/atomic/AtomicInteger;
+    .annotation build Lsa8;
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(I)V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 5
+    .line 6
+    invoke-direct {v0, p1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object v0, p0, Ld60;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()I
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ld60;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final b()I
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ld60;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final c()I
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ld60;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final d()I
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ld60;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method

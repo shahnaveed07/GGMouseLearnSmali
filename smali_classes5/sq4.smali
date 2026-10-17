@@ -1,0 +1,35 @@
+.class public interface abstract Lsq4;
+.super Ljava/lang/Object;
+.source "r8-map-id-50a1ef0e9d7376f45e630c4d62f1f041932a121cc634a95212ba704afef7215a"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageLiteOrBuilder;
+
+
+# virtual methods
+.method public abstract getBizId()Ljava/lang/String;
+.end method
+
+.method public abstract getBizIdBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getGoogleOrderId()Ljava/lang/String;
+.end method
+
+.method public abstract getGoogleOrderIdBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getIsSuccess()Z
+.end method
+
+.method public abstract getMessage()Ljava/lang/String;
+.end method
+
+.method public abstract getMessageBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getStatus()Ljava/lang/String;
+.end method
+
+.method public abstract getStatusBytes()Lcom/google/protobuf/ByteString;
+.end method

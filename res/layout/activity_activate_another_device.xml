@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="#19000000" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="57.0dip" android:layout_marginBottom="32.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/close" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_dialog_close" android:layout_marginEnd="30.0dip" app:layout_constraintBottom_toBottomOf="@id/title" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/title" />
+    <View android:id="@id/recycler_view_bg" android:background="@color/common_bg_color" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="57.0dip" android:layout_marginBottom="32.0dip" android:layout_marginHorizontal="30.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="24.0dip" android:textColor="@color/black" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/settings_view_activate_another_phone" android:layout_marginStart="35.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginHorizontal="32.0dip" android:layout_marginVertical="12.0dip" app:layout_constraintBottom_toBottomOf="@id/recycler_view_bg" app:layout_constraintEnd_toEndOf="@id/recycler_view_bg" app:layout_constraintStart_toStartOf="@id/recycler_view_bg" app:layout_constraintTop_toTopOf="@id/recycler_view_bg">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="start" android:id="@id/headerPrompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_activate_another_device_header_prompt_not_connected" />
+            <Space android:layout_width="fill_parent" android:layout_height="20.0dip" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/white" android:id="@id/promptBeforeConnected" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_activate_another_device_prompt_before_connected" />
+            <ImageView android:layout_gravity="center" android:id="@id/allowUsbDebuggingPromptView" android:layout_width="309.0dip" android:layout_height="240.0dip" android:src="@drawable/click_allow_usb_debugging_button_prompt" />
+            <Space android:layout_width="fill_parent" android:layout_height="20.0dip" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="end|center" android:id="@id/watchTutorialButton" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/manage_adb_activity_redirect_to_tutorial" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

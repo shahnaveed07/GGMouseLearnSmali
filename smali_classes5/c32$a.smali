@@ -1,0 +1,200 @@
+.class public Lc32$a;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lc32;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "a"
+.end annotation
+
+
+# static fields
+.field public static final a:Ljava/math/BigInteger;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    const-wide/16 v0, 0x2
+
+    .line 2
+    .line 3
+    invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    sput-object v0, Lc32$a;->a:Ljava/math/BigInteger;
+
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static a(IILjava/security/SecureRandom;)[Ljava/math/BigInteger;
+    .locals 5
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    sub-int/2addr p0, v0
+
+    .line 3
+    :cond_0
+    const/4 v1, 0x2
+
+    .line 4
+    invoke-static {p0, v1, p2}, Lxo0;->h(IILjava/security/SecureRandom;)Ljava/math/BigInteger;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v2
+
+    .line 8
+    invoke-virtual {v2, v0}, Ljava/math/BigInteger;->shiftLeft(I)Ljava/math/BigInteger;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v3
+
+    .line 12
+    invoke-static {}, Lc32;->a()Ljava/math/BigInteger;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v4
+
+    .line 16
+    invoke-virtual {v3, v4}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v3
+
+    .line 20
+    invoke-virtual {v3, p1}, Ljava/math/BigInteger;->isProbablePrime(I)Z
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v4
+
+    .line 24
+    if-eqz v4, :cond_0
+
+    .line 25
+    .line 26
+    if-le p1, v1, :cond_1
+
+    .line 27
+    .line 28
+    invoke-virtual {v2, p1}, Ljava/math/BigInteger;->isProbablePrime(I)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v1
+
+    .line 32
+    if-eqz v1, :cond_0
+
+    .line 33
+    .line 34
+    :cond_1
+    filled-new-array {v3, v2}, [Ljava/math/BigInteger;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object p0
+
+    .line 38
+    return-object p0
+.end method
+
+.method public static b(Ljava/math/BigInteger;Ljava/security/SecureRandom;)Ljava/math/BigInteger;
+    .locals 3
+
+    .line 1
+    sget-object v0, Lc32$a;->a:Ljava/math/BigInteger;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    :cond_0
+    sget-object v1, Lc32$a;->a:Ljava/math/BigInteger;
+
+    .line 8
+    .line 9
+    invoke-static {v1, v0, p1}, Lxo0;->g(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/security/SecureRandom;)Ljava/math/BigInteger;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v2
+
+    .line 13
+    invoke-virtual {v2, v1, p0}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v1
+
+    .line 17
+    invoke-static {}, Lc32;->a()Ljava/math/BigInteger;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v2
+
+    .line 21
+    invoke-virtual {v1, v2}, Ljava/math/BigInteger;->equals(Ljava/lang/Object;)Z
+
+    .line 22
+    .line 23
+    .line 24
+    move-result v2
+
+    .line 25
+    if-nez v2, :cond_0
+
+    .line 26
+    .line 27
+    return-object v1
+.end method

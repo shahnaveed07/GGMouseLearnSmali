@@ -1,0 +1,167 @@
+.class public final Lrm5$f;
+.super Ljz1;
+.source "r8-map-id-50a1ef0e9d7376f45e630c4d62f1f041932a121cc634a95212ba704afef7215a"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lrm5;->c(Lfe4;Ljava/lang/Object;Lfz1;)Lfz1;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nIntrinsicsJvm.kt\nKotlin\n*S Kotlin\n*F\n+ 1 IntrinsicsJvm.kt\nkotlin/coroutines/intrinsics/IntrinsicsKt__IntrinsicsJvmKt$createCoroutineFromSuspendFunction$2\n+ 2 IntrinsicsJvm.kt\nkotlin/coroutines/intrinsics/IntrinsicsKt__IntrinsicsJvmKt\n*L\n1#1,269:1\n166#2:270\n*E\n"
+.end annotation
+
+.annotation build Lxeb;
+    value = {
+        "SMAP\nIntrinsicsJvm.kt\nKotlin\n*S Kotlin\n*F\n+ 1 IntrinsicsJvm.kt\nkotlin/coroutines/intrinsics/IntrinsicsKt__IntrinsicsJvmKt$createCoroutineFromSuspendFunction$2\n+ 2 IntrinsicsJvm.kt\nkotlin/coroutines/intrinsics/IntrinsicsKt__IntrinsicsJvmKt\n*L\n1#1,269:1\n166#2:270\n*E\n"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic G6:Lfe4;
+
+.field public final synthetic H6:Ljava/lang/Object;
+
+.field public V1:I
+
+
+# direct methods
+.method public constructor <init>(Lfz1;Lm12;Lfe4;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    iput-object p3, p0, Lrm5$f;->G6:Lfe4;
+
+    .line 2
+    .line 3
+    iput-object p4, p0, Lrm5$f;->H6:Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    const-string p3, "null cannot be cast to non-null type kotlin.coroutines.Continuation<kotlin.Any?>"
+
+    .line 6
+    .line 7
+    invoke-static {p1, p3}, Lpm5;->n(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-direct {p0, p1, p2}, Ljz1;-><init>(Lfz1;Lm12;)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method
+
+
+# virtual methods
+.method public q0(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
+
+    .line 1
+    iget v0, p0, Lrm5$f;->V1:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x2
+
+    .line 4
+    const/4 v2, 0x1
+
+    .line 5
+    if-eqz v0, :cond_1
+
+    .line 6
+    .line 7
+    if-ne v0, v2, :cond_0
+
+    .line 8
+    .line 9
+    iput v1, p0, Lrm5$f;->V1:I
+
+    .line 10
+    .line 11
+    invoke-static {p1}, Lq4a;->n(Ljava/lang/Object;)V
+
+    .line 12
+    .line 13
+    .line 14
+    return-object p1
+
+    .line 15
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    .line 16
+    .line 17
+    const-string p1, "This coroutine had already completed"
+
+    .line 18
+    .line 19
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 20
+    .line 21
+    .line 22
+    throw p0
+
+    .line 23
+    :cond_1
+    iput v2, p0, Lrm5$f;->V1:I
+
+    .line 24
+    .line 25
+    invoke-static {p1}, Lq4a;->n(Ljava/lang/Object;)V
+
+    .line 26
+    .line 27
+    .line 28
+    iget-object p1, p0, Lrm5$f;->G6:Lfe4;
+
+    .line 29
+    .line 30
+    const-string v0, "null cannot be cast to non-null type kotlin.Function2<R of kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt.createCoroutineUnintercepted, kotlin.coroutines.Continuation<T of kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt.createCoroutineUnintercepted>, kotlin.Any?>"
+
+    .line 31
+    .line 32
+    invoke-static {p1, v0}, Lpm5;->n(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 33
+    .line 34
+    .line 35
+    iget-object p1, p0, Lrm5$f;->G6:Lfe4;
+
+    .line 36
+    .line 37
+    invoke-static {p1, v1}, Lejc;->q(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    .line 38
+    .line 39
+    .line 40
+    check-cast p1, Lfe4;
+
+    .line 41
+    .line 42
+    iget-object v0, p0, Lrm5$f;->H6:Ljava/lang/Object;
+
+    .line 43
+    .line 44
+    invoke-interface {p1, v0, p0}, Lfe4;->j0(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object p0
+
+    .line 48
+    return-object p0
+.end method

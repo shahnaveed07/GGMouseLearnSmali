@@ -1,0 +1,23 @@
+.class public interface abstract Lrn2;
+.super Ljava/lang/Object;
+.source "r8-map-id-50a1ef0e9d7376f45e630c4d62f1f041932a121cc634a95212ba704afef7215a"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageLiteOrBuilder;
+
+
+# virtual methods
+.method public abstract getDate()Ljava/lang/String;
+.end method
+
+.method public abstract getDateBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getDayIndex()I
+.end method
+
+.method public abstract getReward()I
+.end method
+
+.method public abstract getStatus()I
+.end method

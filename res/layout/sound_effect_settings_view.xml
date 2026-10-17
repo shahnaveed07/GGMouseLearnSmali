@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zjx.gamebox.plugin.soundeffect.SoundEffectSettingsView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:background="#8f000000" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/clickToCloseArea" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/settingPage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/navBar" android:background="@color/jy_blue_2" android:layout_width="0.0dip" android:layout_height="40.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/textView5" android:layout_width="0.0dip" android:layout_height="0.0dip" android:text="@string/sound_effect_plugin_settings_view_title" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/jy_blue_1" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/bottomBar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/navBar">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="30.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                    <TextView android:textSize="11.0sp" android:textColor="@color/white" android:id="@id/textView13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sound_effect_plugin_settings_enable_text" android:layout_weight="1.0" />
+                    <Switch android:id="@id/enableSwitch" android:layout_width="wrap_content" android:layout_height="fill_parent" android:thumbTint="@drawable/switch_thumb" android:trackTint="@drawable/switch_track" />
+                </LinearLayout>
+                <com.zjx.gamebox.ui.tableview.TableView android:id="@id/tableView" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/bottomBar" android:background="@color/jy_blue_2" android:layout_width="0.0dip" android:layout_height="40.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+                <Button android:textSize="12.0sp" android:textColor="@color/jy_blue_2" android:id="@id/closeButton" android:background="@drawable/default_rounded_button_background" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/close" android:layout_weight="0.0" android:layout_marginEnd="10.0dip" android:backgroundTint="@color/white" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</com.zjx.gamebox.plugin.soundeffect.SoundEffectSettingsView>
